@@ -25,15 +25,15 @@ h1 {
   width: 100%; }
 
 article {
-  padding: 20px 40px;
+  padding: 20px 5px;
   box-sizing: border-box; }
 
 p.normalText {
   font-family: "Outfit", Arial, Helvetica, sans-serif;
-  font-size: 1.1em; }
+  font-size: 0.9em; }
 
 h2.articleHeading {
-  font-size: 1.8em;
+  font-size: 1.4em;
   font-family: "Rubik", Arial, Helvetica, sans-serif;
   text-align: center; }
 
