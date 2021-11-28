@@ -6,12 +6,34 @@ body {
   min-height: 100vh;
   width: 100%; }
 
-header {
+.header-background {
   display: flex;
   background-color: #373fa7;
   height: 55px;
-  width: 100%;
-  box-shadow: 0px 10px 15px lightgray; }
+  width: 100%; }
+
+.menu-bar-container {
+  display: none;
+  background-color: #c8cbf5;
+  width: 100%; }
+
+.menu-bar {
+  display: inline-block;
+  list-style-type: none;
+  box-sizing: border-box;
+  margin: 0px; }
+
+.menu-bar > li {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 1.2em; }
+
+.menu-bar > li a {
+  text-decoration: none;
+  color: black; }
+
+.menu-bar > li:hover {
+  background-color: #e8e9fa; }
 
 h1 {
   text-align: center;
@@ -43,6 +65,25 @@ h2.articleHeading {
   padding: 15px 25px;
   border-radius: 15px;
   box-sizing: border-box; }
+
+.nav-menu {
+  position: relative;
+  display: inline-block; }
+
+.nav-menu-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  padding: 2px 8px;
+  min-width: 100px;
+  z-index: 1; }
+
+.nav-menu-content > * {
+  margin: 14px 0; }
+
+.nav-menu:hover .nav-menu-content {
+  display: block; }
 
 .two-column {
   display: flow-root; }
@@ -84,7 +125,13 @@ h2.articleHeading {
 .white {
   background-color: white; }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
+  .nav-menu {
+    display: none; }
+
+  .menu-bar-container {
+    display: inline-block; }
+
   .two-column .column {
     width: 50%;
     border: 1px dashed black; }
