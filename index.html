@@ -248,6 +248,16 @@
                             <p>Aria (Accessible Rich Internet Applications) är en samling attribut som gör det lättare att implementera tillgänglighet genom att beskriva gränssnitts olika komponenter. Attributet används av sökmotorer och av, framför allt, skärmläsare för synnedsatta människor.</p>
                             <p>Den har tre delar: Role, States och Properties. Role definierar vilken typ av gränssnitt det är, medan States och Properties definierar vad dom gör och dess beteende.</p>
                             <p>Här är ett exempel på hur man kan skapa radio knappar med aria:</p>
+                            <div class="codeDemo-container">
+                                <p>&#60;div role="radiogroup" aria-labelledby="gdesc1"&#62;</p>
+                                    <p>&#60;h3&#62;Pizza Crust&#60;/h3&#62;</p>
+                                    <p>&#60;div role="radio" aria-checked="false" tabindex="0"&#62;Regular crust&#60;/div&#62;</p>
+                                    <p>&#60;div role="radio" aria-checked="false" tabindex="-1"&#62;Deep dish&#60;/div&#62;</p>
+                                    <p>&#60;div role="radio" aria-checked="false" tabindex="-1"&#62;Thin crust&#60;/div&#62;</p>
+                                    <p>&#60;/div&#62;</p>
+                                    
+
+                            </div>
 
                             <p>Det kan vara frestande att skriva aria element i alla sina interaktiva element, men det finns ett mer meningsfullt sätt genom att skriva semantiska taggar som finns inbyggt i HTML5, som vi skall diskutera härnäst. ARIA används mycket när elementet i HTML5 har dålig support för tillgänglighet.</p>
 
