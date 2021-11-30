@@ -3,6 +3,15 @@
 $article-header-font:'Rubik', Arial, Helvetica, sans-serif;
 $maintext-font:'Outfit', Arial, Helvetica, sans-serif;
 
+@mixin menu-list-items(){
+    li{
+        a{
+            text-decoration: none;
+            color:black;
+        }
+    } 
+}
+
 body{
     margin:0px;
     padding:0px;
@@ -18,35 +27,49 @@ body{
     width:100%;
 }
 
+//menu bar mobile version
+.nav-menu{
+    position:relative;
+    display:inline-block;
+    &:hover{
+        .nav-menu-content{
+            display: block;
+        } 
+    }
+}
+.nav-menu-content{
+    display:none;
+    position: absolute;
+    background-color: rgb(200, 203, 245);
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    margin:0px;
+    padding:2px 8px;
+    min-width: 100px;
+    z-index: 1;
+    @include menu-list-items()
+}
+
+// menu bar desktop version
 .menu-bar-container{
     display:none;
-    background-color:rgb(200, 203, 245);
     width:100%;
+    background-color: rgb(200, 203, 245);
+    .menu-bar{
+        display:inline-block;
+        list-style-type: none;
+        box-sizing: border-box;
+        margin:0px;
+        @include menu-list-items();
+        li{
+            display: inline-block;
+            padding:5px 10px;
+            font-size: 1.2em;
+            &:hover{
+                background-color: rgb(232, 233, 250);
+            }
+        }
+    }
 }
-
-.menu-bar{
-    display:inline-block;
-    list-style-type: none;
-    box-sizing: border-box;
-    margin:0px;
-}
-
-.menu-bar > li{
-    display: inline-block;
-    padding:5px 10px;
-    font-size: 1.2em;
-}
-
-.menu-bar > li a{
-    text-decoration: none;
-    color:black;
-}
-
-.menu-bar > li:hover{
-    background-color: rgb(232, 233, 250);;
-}
-
-
 
 h1{
     text-align: center;
@@ -57,24 +80,21 @@ h1{
 }
 
 .containerInfo{
-    min-height: 600px;
     width:100%;
 }
 
-article{
+article.articleSection{
     padding:20px 5px;
     box-sizing: border-box;
-}
-
-p.normalText{
     font-family: $maintext-font;
-    font-size: 0.9em;
-}
-
-h2.articleHeading{
     font-size: 1.4em;
-    font-family: $article-header-font;
-    text-align: center;
+    h2{
+        font-size: 2.1em;
+        font-family: $article-header-font;
+    }
+    h2,h3{
+        text-align: center;
+    }
 }
 
 .wrapperRoundedBox{
@@ -85,28 +105,6 @@ h2.articleHeading{
     box-sizing: border-box;
 }
 
-.nav-menu{
-    position:relative;
-    display: inline-block;
-}
-
-.nav-menu-content{
-    display:none;
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-    padding:2px 8px;
-    min-width: 100px;
-    z-index: 1;
-}
-
-.nav-menu-content > *{
-    margin:14px 0;
-}
-
-.nav-menu:hover .nav-menu-content{
-    display: block;
-}
 
 //---------------------------------- LAYOUTS--------------------------------------
 
@@ -160,11 +158,15 @@ h2.articleHeading{
 }
 
 .light-pink{
-    background-color: rgb(255, 199, 208);
+    background-color: rgb(253, 212, 237);
 }
 
 .white{
     background-color: white;
+}
+
+.light-grey{
+    background-color: rgb(204, 204, 204);
 }
 
 @media screen and (min-width:768px){
@@ -197,17 +199,19 @@ h2.articleHeading{
         justify-content: space-between;
         .flex-item-imageWrapper{
             max-width:600px;
+            min-width:350px;
         }
         .flex-item{
             width:auto;
         }
-        .flex-item-800px{
-            width: 60%;
+        .flex-item-60{
+            width:auto;
+            max-width: 60%;
         }
     }
 
     .center-layout{
-        width:70%;
+        max-width:1000px;
     }
 }
 

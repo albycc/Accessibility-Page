@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,14 +11,14 @@
 <body>
     <header>
         <div class="header-background">
-            <div class="nav-menu">
+            <div class="nav-menu ">
                 <i class="fas fa-bars" style="font-size:30px;color:white;margin:10px;"></i>
-                <div class="nav-menu-content">
-                    <p>Start</p>
-                    <p>Articles</p>
-                    <p>Tools</p>
-                    <p>Contact</p>
-                </div>
+                <ul class="nav-menu-content">
+                    <li><a href="">Start</a></li>
+                    <li><a href="">Articles</a></li>
+                    <li><a href="">Tools</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
             </div>
             <h1>Accesibility Now</h1>
         </div>
@@ -32,39 +32,290 @@
         </div>
     </header>
     <main>
-        <div class="containerInfo light-green">
+        <div class="containerInfo white">
             <div class="flex-container white">
-                <div class="flex-item">
-                    <article class="center-layout">
-                        <h2 class="articleHeading">Web accesibility</h2>
-                        <p class="normalText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed nisi sint atque fuga recusandae reiciendis debitis ex commodi impedit laboriosam, beatae, voluptate eaque molestias ullam dolorum. Exercitationem, provident aspernatur?</p>
-                    </article>
+                <div class="center-layout">
+                    <article class="articleSection">
+                        <p>Vi använder dagligen internet i våra liv via surfplattor, datorer och mobiltelefoner för att läsa information, ta del i sociala medier, handla i webbshoppar eller spela online, etc. 
+                            Enligt statistik för 2021 finns det över fyra miljarder aktiva internetanvändare. En del av dom har svårt att använda digitala tjänster i sina dagliga liv på grund av olika funktionshinder.
+                            I detta sammanhänga vill vi berätta om tillgänglighet, dess innebörd, befintliga stöd och vad du som utvecklare skall tänka på.</p>
+                    </article>                
                 </div>
-                
             </div>
+        </div>
+        <div class="containerInfo light-green">
             <div class="flex-container">
                 <div class="flex-item-imageWrapper">
                     <img src="img/img-placeholder.jpg" alt="" class="image-wrapper">
                 </div>
-                <div class="flex-item-800px">
-                    <article>
-                        <h2 class="articleHeading">Sub heading</h2>
-                        <p class="normalText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, libero dolorem porro maxime qui cupiditate odio quos illum, a cumque quis nobis asperiores nesciunt perspiciatis corporis, veniam voluptatibus molestias saepe!</p>
-                        <p class="normalText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, libero dolorem porro maxime qui cupiditate odio quos illum, a cumque quis nobis asperiores nesciunt perspiciatis corporis, veniam voluptatibus molestias saepe!</p>
-                        <p class="normalText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, libero dolorem porro maxime qui cupiditate odio quos illum, a cumque quis nobis asperiores nesciunt perspiciatis corporis, veniam voluptatibus molestias saepe!</p>
-                        <p class="normalText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, libero dolorem porro maxime qui cupiditate odio quos illum, a cumque quis nobis asperiores nesciunt perspiciatis corporis, veniam voluptatibus molestias saepe!</p>
+                <div class="flex-item">
+                    <div class="center-layout">
+                        <article class="articleSection">
+                            <h2>Vad är Tillgänglighet</h2>
+                            <p>Tillgänglighet betyder att tjänster och produkter skall vara anpassade för alla människor som använder dom. Det största fokus i tillgänglighet är att stödja alla möjliga användare i olika kontexter och människor med olika typer av funktionshinder.</p>
+                            <p>Tillgänglighet har utvecklat olika teknologier, tjänster eller apparater för att stödja funktionshindrade. Hörselskadade och döva använder hörselinplantat. Personer med synnedsättning använder skärmläsare vid datoranvändning. Rullstolsbundna med låg rörelseförmåga använder ramp eller hiss.</p>
+                            <p>Om en miljö, tjänst eller produkt inte har såna inbyggda funktioner så är den inte tillgänglig för alla.</p>
+                            <p>Men som sagt så måste man komma ihåg att tillgänglighet inte bara handlar om att stödja funktionshindrade eller om att bygga nya teknologier eller produkter för att stödja dem. Tillgänglighet handlar om att anpassa tjänster och produkter till alla olika typer av målgrupper.
+                                Andra aspekter som tillgänglighet fokuserar på är layout, design, språk och möjligheter som kan förbättra livskvalitet.</p>
+                            <p>Tillgänglighet har därför blivit en huvudpunkt i olika design principer, såsom webb-design och interaktions design. Vi kommer att fokusera på den förstnämnda och hur vi kan utveckla tillgänglighet för webben.</p>
+                        </article>
+                    </div>
+                </div>
+    
+            </div>
+            
+        </div>
+        <div class="containerInfo light-pink">
+            <div class="flex-container">
+                <div class="center-layout">
+                    <article class="articleSection">
+                        <h2>Tillgänglighet i webben</h2>
+                        <p>Webben idag är den största digitala plattformen för att utveckla tjänster. Från tidigt 90-tal till idag har antalet internetanvändare ökat dramatiskt och används mycket i olika aspekter som e-handel, söka jobb, hitta information, utbildning, hälsa och mycket mer. Alla kan dock inte ta del av vad som finns på nätet, främst personer med funktionshinder, såsom döva, blinda eller personer med dyslexi. Som den största plattformen så är det därför viktigt att se hur tillgänglighet har tillämpats på webben.</p>
+                        <p>Webben skall vara designad för alla människor, men det finns dom som har svårt att interagera med vad som finns på en webbplats, såsom funktionshindrade eller andra med begränsad datavana. 
+                            Tillgänglighet på webben innebär anpassade webbplatser för människor med funktionshinder såsom motiriska, hörsel, syn, tal eller kognitions problem. Med inbyggda verktyg eller funktioner på
+                             en webbplats kan funktionshindrade människor läsa och ta del av vad som finns där. Bra strukturerat innehåll och design gör det lättare för användarna att navigera sidan. Även skärmläsare gör
+                              ett bra jobb. God färgkontrast, anpassade knappar eller länkar, underlättar läsandet för människor med nedsatt syn. Det handlar om att de ska kunna förstå hur man navigerar, interagerar, men 
+                              viktigast av allt är att alla ska kunna bidra på webben på ett jämlikt sätt.</p>
+                        <p>När man pratar om tillgänglighet på webben så är fokuset på funktionshindrade och vilka teknologier eller design man kan åstadkomma. Men det egentliga målet är att webbsidor skall vara anpassade för alla, oavsett om man har funktionshinder eller inte. Exempel på det är gamla personer med begränsade förmågor och små skärmar, eller människor som har låg internet uppkoppling. Tillgänglighets tekniker används också i helt andra syften som att använda videotext på bibliotek, där man ska vara tyst, eller att använda skärmläsare vid multi-task syften.</p>
                     </article>
                 </div>
-
+            </div>
+        </div>
+        <div class="containerInfo white">
+            <div class="flex-container">
+                <div class="center-layout">
+                    <article class="articleSection">
+                        <p>Som utvecklare på webben är det väsentligt att kunna stödja tillgänglighet på sin sajt. Det handlar alltså inte bara om att skapa högkvalitativa webbsidor, utan även om att alla skall kunna ta del av deras tjänster och produkter.
+                            Tyvärr är det så att det finns många webbplatser idag som inte har stöd för tillgänglighet. Det kan komma att bli en skyldighet, inte en lyx, för en webb-utvecklare att skapa tillgänglighet på ens webbplats.</p>
+                        <p>W3c (World Wide Web Consortium) har utvecklat standardiserade riktlinjer för tillgänglighet på webben kallad Web Content Accessibility Guidelines (WCAG). Det kan ges som stöd för den som utvecklar hemsidor med tillgänglighet. Det finns fyra huvudprinciper:</p>
+                        <ul>
+                            <li>Möjligt att uppfatta: bra färgkontrast, klar text och stöd för hjälpmedel</li>
+                            <li>Möjligt att använda och hantera: Gränssnittet skall kunna navigeras lätt och knappar och andra element måste ha en yta som är klickbar.</li>
+                            <li>Möjligt att begripa: Innehållet måste vara begripligt för användarna</li>
+                            <li>Robust: Innehållet måste utvecklas med olika webb-standarder, såsom följa HTML-kod-standard eller kod som valideras.</li>
+                        </ul>
+                        <p>WCAG tas fram som den huvudsakliga riktlinjer för tillgänglighet och EU ställer krav på att myndigheter och offentliga aktörers webbplatser skall uppnå minst nivå AA i WCAG 2.1 riktlinjer.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="containerInfo light-grey">
+            <div class="flex-container">
+                <div class="center-layout">
+                    <article class="articleSection">
+                        <h2>Exempel på tillgänglig design</h2>
+                        <p>Vi skall nu ge sex konkretiserade exempel på hur man kan designa tillgänglighet på webben.</p>
+                    </article>
+                </div>
             </div>
         </div>
         <div class="containerInfo light-pink">
-            <div class="wrapperRoundedBox">
-                <article class="center-layout">
+            <div class="flex-container">
+                <div class="flex-item-imageWrapper">
+                    <img src="img/img-placeholder.jpg" alt="" class="image-wrapper">
+                    
+                </div>
+                <div class="flex-item">
+                    <div class="center-layout">
+                        <article class="articleSection">
+                            <h3>Inbyggda funktioner</h3>
+                            <p>Många sajter har inbyggda funktioner för att stödja främst personer som har nedsatt hörsel. Döva eller hörselskadade har dålig koll på vad som händer när tidsbaserad media spelar ljud och videos. 
+                                Det skall finnas inställning för att slå på textbeskrivningar till videos samt ljud. Vissa sajter har också stöd för teckenspråk. Många videosajter som YouTube översätter ljud till text automatiskt.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containerInfo">
+            <div class="flex-container">
+                <div class="flex-item-imageWrapper">
+                    <img src="img/img-placeholder.jpg" alt="" class="image-wrapper">
+                </div>
+                <div class="flex-item">
+                    <div class="center-layout">
+                        <article class="articleSection">
+                            <h3>Tydlig kontrast mellan färger</h3>
+                            <p>Förgrundsfärg och bakgrundsfärg måste ha en tydlig kontrast mellan varandra för att öka läsbarheten. Det kan gälla text i bakgrundsfärg, bilder, gradienter, knappar och andra element. Det gäller för personer med nedsatt syn som dyslexi eller färgblindhet.</p>
+                            <p>Kontrastvärdet kan mätas med programvara eller online tjänster. Enligt WCAG rekommenderas att tröskelvärdet är 4,5:1 för normal och  3:1 för större text. </p>
+                            <p>Man kan också överväga att låta användarna välja kontraster.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containerInfo">
+            <div class="flex-container">
+                <div class="flex-item-imageWrapper">
+                    <img src="img/img-placeholder.jpg" alt="" class="image-wrapper">
+                </div>
+                <div class="flex-item">
+                    <div class="center-layout">
+                        <article class="articleSection">
+                            <h3>Skapa design för olika skärmar</h3>
+                            <p>Människor surfar på webben med datorer, mobiler eller surfplattor. Innehållet på en hemsida måste korrigeras enligt dess skärmar. Mobilskärmar har mindre storlek och kan därför inte presentera allt innehåll på samma sätt som en dator kan. Element som brödtext, rubriker och menyrader måste anpassas för en mindre skärmyta. Se till att texten är läsbar.</p>
 
-                    <h2 class="articleHeading">Web accesibility</h2>
-                    <p class="normalText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed nisi sint atque fuga recusandae reiciendis debitis ex commodi impedit laboriosam, beatae, voluptate eaque molestias ullam dolorum. Exercitationem, provident aspernatur?</p>
-                </article>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containerInfo">
+            <div class="flex-container">
+                <div class="flex-item-imageWrapper">
+                    <img src="img/img-placeholder.jpg" alt="" class="image-wrapper">
+                </div>
+                <div class="flex-item">
+                    <div class="center-layout">
+                        <article class="articleSection">
+                            <h3>Navigation med tangentbord</h3>
+                            <p>Alla har inte tillgång till mus och vissa gillar att navigera med tangentbord. Människor som inte kan se eller har skadat armen, använder medel som tangentbort och röststyrning. </p>
+                            <p>Se till att webbsidan även kan navigeras helt med tangentbord.</p>
+
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containerInfo">
+            <div class="flex-container">
+                <div class="flex-item-imageWrapper">
+                    <img src="img/img-placeholder.jpg" alt="" class="image-wrapper">
+                </div>
+                <div class="flex-item">
+                    <div class="center-layout">
+                        <article class="articleSection">
+                            <h3>Gruppera relaterat innehåll korrekt</h3>
+                            <p>Layout är en väsentligt del i att skapa en läsbar hemsida. Se till att text och allt innehåll tillhör rätt text grupp. En bild i en artikel som är förskjuten neråt till en annan artikel kan tolkas på olika sätt.</p>
+                            <p>Använd radavstånd och rubriker för att undvika detta problem.</p>
+
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containerInfo">
+            <div class="flex-container">
+                <div class="flex-item-imageWrapper">
+                    <img src="img/img-placeholder.jpg" alt="" class="image-wrapper">
+                </div>
+                <div class="flex-item">
+                    <div class="center-layout">
+                        <article class="articleSection">
+                            <h3>Korrekt feedback</h3>
+                            <p>Det skall vara tydligt vilken feedback användaren får när hen interagerar på en webbsida, som tex felmeddelande i ett forumlär om ändringar har gjorts på en sida eller fel data har matats in.</p>
+                            <p>Instruktioner skall vara tydliga för användarna som att exempelvis markera rekommenderade fält med *(stjärnor).</p>
+
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containerInfo light-grey">
+            <div class="flex-container">
+                <div class="center-layout">
+                    <article class="articleSection">
+                        <h2>Som utvecklare</h2>
+                        <p>Om du jobbar på webben och är en UX/UI designer eller Frontend-utvecklare finns det olika sätt för att åstadkomma tillgänglighet med hjälp av kodrader. Här följer några exempel.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="containerInfo">
+            <div class="flex-container">
+                <div class="flex-item-imageWrapper">
+                    <img src="img/img-placeholder.jpg" alt="" class="image-wrapper">
+                </div>
+                <div class="flex-item">
+                    <div class="center-layout">
+                        <article class="articleSection">
+                            <h3>Alternativ text för bilder</h3>
+                            <p>Bilder skall komma med en alternativ text. Bild element som <img> eller <picture> kommer med en "alt" attribut som man kan beskriva. "Alt" attributet är huvudsakligen till för skärmläsare som är blinda. Om det händer att bilden på hemsidan inte kan visas så dyker en alternativ text upp.</p>
+
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containerInfo">
+            <div class="flex-container">
+                <div class="flex-item-imageWrapper">
+                    <img src="img/img-placeholder.jpg" alt="" class="image-wrapper">
+                </div>
+                <div class="flex-item">
+                    <div class="center-layout">
+                        <article class="articleSection">
+                            <h3>ARIA attribut</h3>
+                            <p>Aria (Accessible Rich Internet Applications) är en samling attribut som gör det lättare att implementera tillgänglighet genom att beskriva gränssnitts olika komponenter. Attributet används av sökmotorer och av, framför allt, skärmläsare för synnedsatta människor.</p>
+                            <p>Den har tre delar: Role, States och Properties. Role definierar vilken typ av gränssnitt det är, medan States och Properties definierar vad dom gör och dess beteende.</p>
+                            <p>Här är ett exempel på hur man kan skapa radio knappar med aria:</p>
+
+                            <p>Det kan vara frestande att skriva aria element i alla sina interaktiva element, men det finns ett mer meningsfullt sätt genom att skriva semantiska taggar som finns inbyggt i HTML5, som vi skall diskutera härnäst. ARIA används mycket när elementet i HTML5 har dålig support för tillgänglighet.</p>
+
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containerInfo">
+            <div class="flex-container">
+                <div class="flex-item-imageWrapper">
+                    <img src="img/img-placeholder.jpg" alt="" class="image-wrapper">
+                </div>
+                <div class="flex-item">
+                    <div class="center-layout">
+                        <article class="articleSection">
+                            <h3>Ange semantiska taggar</h3>
+                            <p>Bra strukturerade och semantiska taggar kan hjälpa bl.a. människor med skärmläsare eller andra hjälpmedel, där såna apparater läser vad som finns på DOM (Document Object Model). Dessa hjälpmedel kan lättare ange vad en "tag" eller ett innehåll betyder även för en utvecklare. En skärmläsare eller andra hjälpmedel kan också förstå dess struktur och kan lättare navigera runt sidan.</p>
+                            <p>De första semantiska taggarna för att strukturera innehåll bör inledas med header, main och footer, och taggar som article, aside, nav kan gruppera text, menyer, bilder eller dylikt. div och span har ingen semantisk mening och kan inte ha tillgång av tillgänglighets API eller användning av tangentbord. De två taggarna skall bara användas för layout.</p>
+
+
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containerInfo">
+            <div class="flex-container">
+                <div class="flex-item-imageWrapper">
+                    <img src="img/img-placeholder.jpg" alt="" class="image-wrapper">
+                </div>
+                <div class="flex-item">
+                    <div class="center-layout">
+                        <article class="articleSection">
+                            <h3>Anpassa efter skärmstorlek</h3>
+                            <p>Alla har inte tillgång till datorer och mobilen är nu den huvudsakliga källan för internetanvändning. Du måste se till att knappar, text och allt innehåll anpassas till mindre skärmar, särskilt för de som inte har tillgång till datorer eller har dålig syn.</p>
+                            <p>"Mobile first" är ett sätt att bygga en webbplats till mobiler innan man skapar en för datorer. De flesta använder mobil för att surfa på nätet och därför rekommenderas det att man designar sin webbplats i enlighet med "mobile first". </p>
+                            <p>I din responsiva kod så måste du se till att skärmstorlek står efter min-width</p>
+
+
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containerInfo">
+            <div class="flex-container">
+                <div class="flex-item-imageWrapper">
+                    <img src="img/img-placeholder.jpg" alt="" class="image-wrapper">
+                </div>
+                <div class="flex-item">
+                    <div class="center-layout">
+                        <article class="articleSection">
+                            <h3>Gör en logisk tab ordning</h3>
+                            <p>Se till att tab ordningen följer en logisk ordning, då vissa användare navigerar sidan med hjälp av tangentbordet, och kan ändra fokus mellan elementen. Den vanligaste är tab-knappen, men även piltangenter kan användas.</p>
+                            <p>tabindex attributet används för att definiera i vilken ordning interaktiva element skall ha fokus när användaren knappar på tab. Den har tre värden, -1, 0 och 1 eller mer. </p>
+                            <p>Element med 1 eller mer följer fokusordning.</p>
+                            <p>Element med 0 presenteras i den ordning de kommer i koden.</p>
+                            <p>Element med -1 plockas bort från fokusordningen.</p>
+                            <p>tabindex kan vara ett alternativ sätt för utvecklare att ändra tab ordning. 
+                                I enlighet med många så rekommenderas inte tabindex.
+                                En kod som följer en logisk ordning rekommenderas.</p>
+
+
+
+                        </article>
+                    </div>
+                </div>
             </div>
         </div>
 
