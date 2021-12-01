@@ -2,6 +2,8 @@
 
 $article-header-font:'Rubik', Arial, Helvetica, sans-serif;
 $maintext-font:'Outfit', Arial, Helvetica, sans-serif;
+$codeSnipperText:'Courier New', "Lucida Console", monospace;
+
 
 @mixin menu-list-items(){
     li{
@@ -63,7 +65,7 @@ body{
         li{
             display: inline-block;
             padding:5px 10px;
-            font-size: 1.2em;
+            font-size: 1.5em;
             &:hover{
                 background-color: rgb(232, 233, 250);
             }
@@ -166,6 +168,16 @@ article.articleSection{
 
 .light-grey{
     background-color: rgb(204, 204, 204);
+}
+
+.code-text{
+    font-family: $codeSnipperText;
+    &::before{
+        content:"<";
+    }
+    &::after{
+        content:">"
+    }
 }
 
 .codeDemo-container{
