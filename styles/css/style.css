@@ -112,7 +112,7 @@ article.articleSection {
 
 .flex-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between; }
 
 .image-wrapper {
@@ -159,16 +159,6 @@ article.articleSection {
     width: 100%;
     margin-left: 0%;
     margin-right: 0%; }
-
-  .two-column .column {
-    width: 50%;
-    border: 1px dashed black; }
-  .two-column .column-60 {
-    border: 1px dashed black;
-    width: 60%; }
-  .two-column .column-40 {
-    border: 1px dashed black;
-    width: 40%; }
 
   .flex-container {
     flex-direction: row;

@@ -145,14 +145,9 @@ article.articleSection{
 
 .flex-container{
     display:flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
 }
-
-// .flex-container > *{
-//     border: 1px solid red;
-//     box-sizing: border-box;
-// }
 
 .image-wrapper{
     width:80%;
@@ -210,21 +205,6 @@ article.articleSection{
         width:100%;
         margin-left:0%;
         margin-right:0%;
-    }
-
-    .two-column{
-        .column{
-            width:50%;
-            border: 1px dashed black;
-        }
-        .column-60{
-            border:1px dashed black;
-            width:60%;
-        }
-        .column-40{
-            border:1px dashed black;
-            width:40%;
-        }
     }
 
     .flex-container{
