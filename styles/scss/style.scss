@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Outfit&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=PT+Serif&family=Rubik&display=swap');
 
 $article-header-font:'Rubik', Arial, Helvetica, sans-serif;
 $maintext-font:'Outfit', Arial, Helvetica, sans-serif;
 $codeSnipperText:'Courier New', "Lucida Console", monospace;
+$menuBackgroundColour:rgb(80, 90, 238);
 
 
 @mixin menu-list-items(){
     li{
+        padding:15px 10px;
+        font-size: 1.3em;
         a{
             text-decoration: none;
-            color:black;
+            color:white;
+            font-family: $maintext-font;
         }
     } 
 }
@@ -24,8 +28,9 @@ body{
 
 .header-background{
     display:flex;
-    background-color:rgb(55, 63, 167);
-    height:55px;
+    align-items: center;
+    background-color:rgb(43, 51, 158);
+    height:auto;
     width:100%;
 }
 
@@ -42,7 +47,7 @@ body{
 .nav-menu-content{
     display:none;
     position: absolute;
-    background-color: rgb(200, 203, 245);
+    background-color: $menuBackgroundColour;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
     margin:0px;
     padding:2px 8px;
@@ -55,19 +60,22 @@ body{
 .menu-bar-container{
     display:none;
     width:100%;
-    background-color: rgb(200, 203, 245);
+    height:auto;
+    background-color: $menuBackgroundColour;
+    justify-content: center;
     .menu-bar{
         display:inline-block;
         list-style-type: none;
-        box-sizing: border-box;
         margin:0px;
         @include menu-list-items();
         li{
             display: inline-block;
-            padding:5px 10px;
-            font-size: 1.5em;
+            padding:10px 30px;
             &:hover{
                 background-color: rgb(232, 233, 250);
+                a{
+                    color:black;
+                }
             }
         }
     }
@@ -77,8 +85,16 @@ h1{
     text-align: center;
     font-family: 'Frank Ruhl Libre', Georgia, "Times New Roman", serif;
     color: white;
-    font-size: 1.5em;
-    margin:12px 30px;
+    font-size: 1.8em;
+    margin:12px 10%;
+}
+
+.header-paragraph{
+    display:none;
+    color:white;
+    font-size: 1.2em;
+    margin-left:10%;
+    font-style: italic;
 }
 
 .containerInfo{
@@ -89,7 +105,7 @@ article.articleSection{
     padding:20px 5px;
     box-sizing: border-box;
     font-family: $maintext-font;
-    font-size: 1.4em;
+    font-size: 1.1em;
     h2{
         font-size: 2.1em;
         font-family: $article-header-font;
@@ -97,6 +113,10 @@ article.articleSection{
     h2,h3{
         text-align: center;
     }
+}
+
+.align-text{
+    text-align: center;
 }
 
 .wrapperRoundedBox{
@@ -107,31 +127,15 @@ article.articleSection{
     box-sizing: border-box;
 }
 
-//---------------------------------- LAYOUTS--------------------------------------
-
-.two-column{
-    display:flow-root;
-    .column{
-        border:1px solid black;
-        float:left;
-        width:100%;
-        box-sizing: border-box;
+.link-container{
+    line-height: 1.2em;
+    margin:30px 0px;
+    p{
+        margin:0px;
     }
-
-    .column-60{
-        border:1px solid black;
-        float:left;
-        width:100%;
-        box-sizing: border-box;
-    }
-    .column-40{
-        border:1px solid black;
-        float:left;
-        width:100%;
-        box-sizing: border-box;
-    }
-
 }
+
+//---------------------------------- LAYOUTS--------------------------------------
 
 .center-layout{
     width: 100%;
@@ -151,7 +155,9 @@ article.articleSection{
 // }
 
 .image-wrapper{
-    width:100%;
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
 }
 
 .light-green{
@@ -167,35 +173,43 @@ article.articleSection{
 }
 
 .light-grey{
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(233, 233, 233);
+}
+
+.light-blue{
+    background-color: rgb(186, 248, 250);
 }
 
 .code-text{
     font-family: $codeSnipperText;
-    &::before{
-        content:"<";
-    }
-    &::after{
-        content:">"
-    }
 }
 
 .codeDemo-container{
     border-radius: 12px;
-    background-color: rgb(218, 218, 218);
-    padding:12px;
-    margin:5px 35px;
+    background-color: rgb(230, 230, 230);
+    padding:6px;
     min-height:100px;
+    font-family: $codeSnipperText;
 }
 
 @media screen and (min-width:768px){
+
+    .header-paragraph{
+        display:inline-block;
+    }
 
     .nav-menu{
         display:none;
     }
 
     .menu-bar-container{
-        display:inline-block;
+        display:flex;
+    }
+
+    .image-wrapper{
+        width:100%;
+        margin-left:0%;
+        margin-right:0%;
     }
 
     .two-column{
@@ -215,10 +229,12 @@ article.articleSection{
 
     .flex-container{
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         .flex-item-imageWrapper{
-            max-width:600px;
-            min-width:350px;
+            display:flex;
+            width:400px;
+            min-width:300px;
+            align-items: center;
         }
         .flex-item{
             width:auto;
@@ -229,13 +245,35 @@ article.articleSection{
         }
     }
 
+    .codeDemo-container{
+        margin:5px 35px;
+        padding:12px;
+    }
+
     .center-layout{
-        max-width:1000px;
+        max-width:900px;
+    }
+
+    article.articleSection{
+        font-size: 1.4em;
     }
 }
 
 footer{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
     background-color: rgb(50, 49, 53);
     min-height: 200px;
     width:100%;
+    div.footer-col{
+        margin-left:50px;
+        margin-right:50px;
+        color:white;
+        font-family: $maintext-font;
+        a{
+            color:white;
+            text-decoration: none;
+        }
+    }
 }
